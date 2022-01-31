@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: hsl(212, 45%, 89%);
+    font-size: 15px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* height: 500px; */
+    width: 290px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px 15px 35px;
+    box-shadow: 1px 1px 10px rgba(121, 121, 121, 0.452);
+    max-width: 95%;
+}
+
+.qr-code{
+    width: 100%;
+    border-radius: 15px
+}
+
+
+.title{
+    color: hsl(218, 44%, 22%);
+    font-family: Outfit, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    /* width: 250px; */
+}
+
+
+.paragraph{
+    color: hsl(220, 15%, 55%);
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer {
+    color: hsl(220, 15%, 55%);
+    font-family: Outfit, sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.copy-mobile{
+    display: none;
+}
+
+a{
+    color: hsl(218, 44%, 22%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .copy-mobile{
+        display: block;
+    }
+
+    .copy-pc{
+        display: none;
+    }
+}
